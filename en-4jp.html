@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Target 1900</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="en-4jp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>英語ー＞日本語4択</h1>
+        <div class="result" id="resultWindo">
+            <span class="resu-text" id="resu_text">Result</span>
+        </div>
+        <div class="main" id="main">
+            <div class="timer"><span class="timer-text" id="timerText">00.00</span></div>
+            <div class="question" id="question"><span class="question-text" id="questionText">Loading...</span></div>
+            <hr>
+            <div class="user-input" id="userInput">
+                <div class="selector" id="selector"></div>
+            </div>
+            <div class="controller">
+                <button class="button" id="btnReset" disabled>Reset</button>
+                <button class="button" id="btnStart" disabled>Start</button>
+            </div>
+            <p>space:Start ESC:Reset </p>
+        </div>
+        <div class="settings">
+            <span>From</span>
+            <select name="from_section" size="1" id="fromSection">
+            </select>
+            <span>To</span>
+            <select name="to_section" size="1" id="toSection">
+            </select>
+        </div>
+    </div>
+    <script type="module" src="lib/script-en-jp4.js"></script>
+</body>
+</html>
